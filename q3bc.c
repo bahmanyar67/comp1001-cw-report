@@ -62,9 +62,7 @@ const signed char GyMask[3][3] = {
 
 char header[100];
 
-
-int
-main ()
+int main ()
 {
 
     char *in, *out, *out2;
@@ -114,8 +112,7 @@ main ()
     return 0;
 }
 
-void
-Gaussian_Blur ()
+void Gaussian_Blur ()
 {
 
     int row, col, rowOffset, colOffset;
@@ -152,9 +149,7 @@ Gaussian_Blur ()
 
 }
 
-
-void
-Sobel ()
+void Sobel ()
 {
 
     int row, col, rowOffset, colOffset;
@@ -193,11 +188,7 @@ Sobel ()
 
 }
 
-
-
-
-void
-read_image (char *filename)
+void read_image (char *filename)
 {
 
     int c;
@@ -252,10 +243,7 @@ read_image (char *filename)
 
 }
 
-
-
-void
-write_image2 (char *filename, unsigned char *output_image)
+void write_image2 (char *filename, unsigned char *output_image)
 {
 
     FILE *foutput;
@@ -291,11 +279,7 @@ write_image2 (char *filename, unsigned char *output_image)
 
 }
 
-
-
-
-void
-openfile (char *filename, FILE ** finput)
+void openfile (char *filename, FILE ** finput)
 {
     int x0, y0, x;
 
@@ -326,14 +310,9 @@ openfile (char *filename, FILE ** finput)
 
 }
 
-
-
 //CRITICAL POINT: you can define your routines here that create the arrays dynamically; now, the arrays are defined statically.
 
-
-
-int
-getint (FILE * fp)		/* adapted from "xv" source code */
+int getint (FILE * fp)		/* adapted from "xv" source code */
 {
     int c, i, firstchar;		//, garbage;
 
